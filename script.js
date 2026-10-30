@@ -12,7 +12,7 @@ document.querySelectorAll('.reveal').forEach((el) => observer.observe(el));
 document.querySelectorAll('a[href="https://wasepje.com/fpoc"]').forEach((cta) => {
   cta.addEventListener('click', () => {
     if (typeof window.fbq === 'function') {
-      window.fbq('track', 'Contact', {
+      window.fbq('track', 'CompleteRegistration', {
         content_name: 'WhatsApp CTA',
         button_location: cta.className || 'whatsapp-link'
       });
